@@ -7,96 +7,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- External CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header-section">
-        <img src="images/headshot.jpg" alt="Teo Gamarra" class="profile-img">
-        <h1>Teo Gamarra</h1>
-        <h2>Cloud Engineer | Object Oriented Programmer</h2>
-        <p>B.S. in Computer Science with extensive experience in cloud infrastructure, software development, and AI research. Specialized in containerization, CI/CD pipelines, ServiceNow development, and full-stack applications. Proven track record of implementing scalable solutions across government, enterprise, and research environments.</p>
+        <div class="content-wrap">
+            <img src="images/headshot.jpg" alt="Teo Gamarra" class="profile-img column-narrow">
+            <div class="column-wide">
+                <h1>Teo Gamarra</h1>
+                <h2>Cloud Engineer | Object Oriented Programmer</h2>
+                <p>B.S. in Computer Science with extensive experience in cloud infrastructure, software development, and AI research. Specialized in containerization, CI/CD pipelines, ServiceNow development, and full-stack applications. Proven track record of implementing scalable solutions across government, enterprise, and research environments.</p>
+            </div>
+        </div>
     </header>
     
-    <main>
+    <main> 
         <section class="work-experience">
-            <h2>Work Experience</h2>
+            <div class="content-wrap">
+                <h2>Work Experience</h2>
+
+                <div class="job-item">
+                    <div class="column-narrow">
+                        <h3>Software Developer</h3>
+                        <p><strong>Government Santa Monica City</strong></p>
+                        <p>June 2025 – Present</p>
+                    </div>
+                    <div class="column-wide">
+                        <ul>
+                            <li>Containerized the santamonica.gov CMS application (OrchardCore) using Docker, reducing local onboarding setup for in-house developers and external contractors from weeks to minutes</li>
+                            <li>Engineered the CI/CD pipeline for a Docker package that uses .NET, node, SQLite and other distributions under a UNIX system ensuring internal/external port binding to localhost</li>
+                            <li>Integrated API solutions to automate media lifecycle management in Bynder Universal Compact View, and Document Repository Management on ServiceNow</li>
+                            <li>Object oriented programming in interfaces and classes in .NET, developing with document-oriented databases (YesSQL)</li>
+                            <li>Developed and scripted UI Policies, Workflows/Flows, Catalog Client Scripts, Record Producers, Variable Sets using developer tools on ServiceNow Studio/Workflow Studio/ServiceNow IDE</li>
+                            <li>Configured Core Angular-JS applications on Portal for pages, themes, widgets in accordance to newest applications under development mode</li>
+                            <li>Converted existing applications and new apps in Fluent-metadata to start developing using SDK Fluent</li>
+                            <li>Managed the Application Portfolio Management Module following an Agile/Waterfall approach tracking personal taskings, VTBs, and ticketing</li>
+                        </ul>
+                    </div>
+                </div>
+
             <div class="job-item">
-                <h3>Software Intern</h3>
-                <p><strong>Government Santa Monica City</strong></p>
-                <p>June 2025 – Present</p>
-                
-                <ul>
-                    <li>Containerized the santamonica.gov CMS application (OrchardCore) using Docker, reducing local onboarding setup for in-house developers and external contractors from weeks to minutes</li>
-                    <li>Engineered the CI/CD pipeline for a Docker package that uses .NET, node, SQLite and other distributions under a UNIX system ensuring internal/external port binding to localhost</li>
-                    <li>Integrated API solutions to automate media lifecycle management in Bynder Universal Compact View, and Document Repository Management on ServiceNow</li>
-                    <li>Object oriented programming in interfaces and classes in .NET, developing with document-oriented databases (YesSQL)</li>
-                    <li>Developed and scripted UI Policies, Workflows/Flows, Catalog Client Scripts, Record Producers, Variable Sets using developer tools on ServiceNow Studio/Workflow Studio/ServiceNow IDE</li>
-                    <li>Configured Core Angular-JS applications on Portal for pages, themes, widgets in accordance to newest applications under development mode</li>
-                    <li>Converted existing applications and new apps in Fluent-metadata to start developing using SDK Fluent</li>
-                    <li>Managed the Application Portfolio Management Module following an Agile/Waterfall approach tracking personal taskings, VTBs, and ticketing</li>
-                </ul>
+                <div class="column-narrow">
+                    <h3>AI Research</h3>
+                    <p><strong>California State University Northridge (CSUN)</strong></p>
+                    <p>June 2025 – Present</p>
+                </div>
+                <div class="column-wide">
+                    <ul>
+                        <li>Working in a flight software simulation using Basilisk and Vizard to visualize astrodynamics simulation</li>
+                        <li>Developing contact-aware docking envelope using Matlab SDK/Simulink</li>
+                        <li>Training off-limits values like position, velocity, forces, kinematics using Gym and RLIB</li>
+                        <li>Contrasting data with STK/GMAT</li>
+                        <li>Implemented a reinforcement learning environment using multi-model and single-model training to optimize tasking policies</li>
+                        <li>Working on an API interface and AWS lambda functions to provide a membership feature</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="job-item">
-                <h3>AI Research</h3>
-                <p><strong>California State University Northridge (CSUN)</strong></p>
-                <p>June 2025 – Present</p>
-                
-                <ul>
-                    <li>Working in a flight software simulation using Basilisk and Vizard to visualize astrodynamics simulation</li>
-                    <li>Developing contact-aware docking envelope using Matlab SDK/Simulink</li>
-                    <li>Training off-limits values like position, velocity, forces, kinematics using Gym and RLIB</li>
-                    <li>Contrasting data with STK/GMAT</li>
-                    <li>Implemented a reinforcement learning environment using multi-model and single-model training to optimize tasking policies</li>
-                    <li>Working on an API interface and AWS lambda functions to provide a membership feature</li>
-                </ul>
+                <div class="column-narrow">
+                    <h3>Software Developer (Letter Recognition)</h3>
+                    <p><strong>thelegalleads.com</strong></p>
+                    <p>Feb 2025 – Apr 2025 | Dec 2022 – Apr 2023</p>
+                </div>
+                <div class="column-wide">
+                    <ul>
+                        <li>Implemented a virtual AI agent for a call center featuring SpeechToText/TextToSpeech, enabling real-time conversations (websockets) based on Azure Agents, embedding process in RAG, and function calling in Large Language Models</li>
+                        <li>Developed an XML API to integrate 5Nine with Tableau to transfer data over internal IPs</li>
+                        <li>Object Oriented Programming on Salesforce Apex to create and retrieve marketing campaign leads across sandbox and production environments</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="job-item">
-                <h3>Software Developer (Letter Recognition)</h3>
-                <p><strong>thelegalleads.com</strong></p>
-                <p>Feb 2025 – Apr 2025 | Dec 2022 – Apr 2023</p>
-                
-                <ul>
-                    <li>Implemented a virtual AI agent for a call center featuring SpeechToText/TextToSpeech, enabling real-time conversations (websockets) based on Azure Agents, embedding process in RAG, and function calling in Large Language Models</li>
-                    <li>Developed an XML API to integrate 5Nine with Tableau to transfer data over internal IPs</li>
-                    <li>Object Oriented Programming on Salesforce Apex to create and retrieve marketing campaign leads across sandbox and production environments</li>
-                </ul>
+                <div class="column-narrow">
+                    <h3>Software Engineer</h3>
+                    <p><strong>ironmountain.com</strong></p>
+                    <p>April 2023 – May 2024</p>
+                </div>
+                <div class="column-wide">
+                    <ul>
+                        <li>Member of the Secure IT Asset Disposition team, implementing a JSON payload for an ETL process between Nike Inc ServiceNow QAs and IronMountain ServiceNow QAs using Scripted Rest APIs, Rest Services, Portal-AngularJS, UI Builder, DataBrokers, OAuth2.0</li>
+                        <li>Developed a custom 'QA' environment in ServiceNow hosting two scoped apps for Chain of Custody and B2B integration of Iron Mountain SMS - SITAD SMS</li>
+                        <li>Monitored API services in Apache JMeter and created tickets for identified bugs</li>
+                        <li>Introduced to microservices architecture in Dotnet and Azure Pipelines following an Agile methodology and ISO protocols</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="job-item">
-                <h3>Software Engineer</h3>
-                <p><strong>ironmountain.com</strong></p>
-                <p>April 2023 – May 2024</p>
-                <ul>
-                    <li>Member of the Secure IT Asset Disposition team, implementing a JSON payload for an ETL process between Nike Inc ServiceNow QAs and IronMountain ServiceNow QAs using Scripted Rest APIs, Rest Services, Portal-AngularJS, UI Builder, DataBrokers, OAuth2.0</li>
-                    <li>Developed a custom 'QA' environment in ServiceNow hosting two scoped apps for Chain of Custody and B2B integration of Iron Mountain SMS - SITAD SMS</li>
-                    <li>Monitored API services in Apache JMeter and created tickets for identified bugs</li>
-                    <li>Introduced to microservices architecture in Dotnet and Azure Pipelines following an Agile methodology and ISO protocols</li>
-                </ul>
+                <div class="column-narrow">
+                    <h3>Server Engineer</h3>
+                    <p><strong>Various Projects</strong></p>
+                    <p>July 2021 – March 2023</p>
+                </div>
+                <div class="column-wide">
+                    <ul>
+                        <li>Developed a flight system in SpringBoot, incorporating Spring Beans and Spring Cloud</li>
+                        <li>Set up a coding environment in Cloud9 AWS for QA development</li>
+                        <li>Used Azure OpenAI models to secure geolocation and tracking coordinates as priority</li>
+                        <li>Documented guidelines on Postman and Swagger documentation</li>
+                        <li>Enhanced security rules, objects and groups in Sonic Wall and AWS security groups</li>
+                        <li>Developed a PowerShell script to backup Windows devices data in S3 buckets</li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </section>
-        
+
         <section class="education">
-            <h2>Education</h2>
-            <div class="school-item">
+            <div class="content-wrap">
+                <h2>Education</h2>
+
+                <div class="school-item">
                 <h3>Bachelor of Science in Computer Science</h3>
                 <p><strong>California State University Northridge</strong></p>
-                <p><strong>Certifications:</strong> <a href="https://linkedin.com/in/eberteo/" target="_blank">View Certifications on LinkedIn</a></p>
+                    <p><strong>Certifications:</strong> <a href="https://linkedin.com/in/eberteo/" target="_blank">View Certifications on LinkedIn</a></p>
+                </div>
             </div>
         </section>
     </main>
     
     <footer class="footer-section">
-        <h2>Let's Keep in Touch!</h2>
-        <div>
+        <div class="content-wrap">
+            <h2>Let's Keep in Touch!</h2>
+            
+            <div class="contact-info">
             <a href="mailto:eberteo@hotmail.com">eberteo@hotmail.com</a>
             <a href="https://linkedin.com/in/eberteo" target="_blank">LinkedIn</a>
             <a href="tel:+18184540384">Phone: 818.454.0384</a>
         </div>
 
-        <p>Copyright 2026 by Teo Gamarra</p>
+            <p>Copyright 2026 by Teo Gamarra | Built with HTML & CSS</p>
+        </div>
     </footer>
 </body>
 </html>

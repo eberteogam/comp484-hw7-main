@@ -1,4 +1,4 @@
-﻿/*  Palette
+﻿/* Color Palette
 #2C3E50: Dark Blue Gray
 #3498DB: Bright Blue
 #ECF0F1: Light Gray
@@ -6,7 +6,19 @@
 #34495E: Medium Gray Blue
 */
 
-/* Global Ones */
+/* Global styles 
+------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -29,6 +41,7 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 600;
+    margin-top: 0;
 }
 
 h3 {
@@ -42,6 +55,19 @@ section {
     max-width: 900px;
 }
 
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
 .header-section {
     background-color: #2C3E50;
     color: #FFFFFF;
@@ -52,6 +78,7 @@ section {
 .header-section h1,
 .header-section h2 {
     color: #FFFFFF;
+    margin: 0;
 }
 
 .header-section h2 {
@@ -60,11 +87,7 @@ section {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid #3498DB;
 }
 
 .footer-section {
@@ -93,6 +116,14 @@ section {
     margin: 20px 0;
 }
 
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Work Experience
+------------------------------------*/
 .work-experience {
     background-color: #FFFFFF;
     border-left: 5px solid #3498DB;
